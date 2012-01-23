@@ -8,6 +8,9 @@ class Main extends CI_Controller
 	}
 	function index()
 	{
-		$this->load->view("main/index");
+		$temp = array("temp"=>"going to put on the screen");
+		$this->load->view("main/index", $temp);
 	}
 }
+
+?>
